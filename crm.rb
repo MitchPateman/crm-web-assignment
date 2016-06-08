@@ -9,5 +9,6 @@ require 'sinatra/reloader'
 
 get '/' do
 	@crm_app_name = "Mitch's CRM"
+	@current_time = Time.now.ctime
 	erb :index
 end
