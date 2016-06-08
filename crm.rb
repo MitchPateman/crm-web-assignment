@@ -12,3 +12,7 @@ get '/' do
 	@current_time = Time.now.ctime
 	erb :index
 end
+
+get '/contacts' do
+	erb :contacts
+end
