@@ -3,8 +3,10 @@
 <ul>
 	<h4 class="print_all_contacts">
 			<% Contact.all.each do |contact| %>
-				<b><li><%= contact.first_name %> <%= contact.last_name %></li></b>
-				<%= contact.email %> ----- <%= contact.note %> <br /><br />
+				<a href= '/contacts/<%= contact.id %>'>
+					<b><li><%= contact.first_name %> <%= contact.last_name %></li></b>
+				</a>
+				<br />
 			<% end %>
 	</h4>
 </ul>
