@@ -19,19 +19,20 @@ h1, h2, h3, h4, h5, nav {
 
 .logo {
 	margin-top: 40px;
-	margin-left: 50%;
+	margin-left: 55%;
 	margin-bottom: 10px
 	}
 
 nav {
 	color: black;
 	text-align: center;
-	margin-left: 50%;
+	margin-left: 55vw;
 	margin-bottom: 10px;
 }
 
 form {
-	margin-left: 36%;
+	text-align: center;
+	margin-left: -10vw;
 }
 
 a{
@@ -69,17 +70,3 @@ footer {
 ul {
 	list-style-type: none;
 }
-
-
-/*
-#second_level {
-	text-decoration: underline;
-}
-
-
-#logo {
-	border: 5px solid black;
-	background-color: yellow;
-	padding: 10px 10px 10px 10px;
-}
-*/
