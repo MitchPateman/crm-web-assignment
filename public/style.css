@@ -64,12 +64,17 @@ footer {
 }
 
 .body_title_onecontact {
-	margin-right: 14%
+	margin-right: 14%;
 }
 
 .print_all_contacts {
 	margin-right: 15%;
 	margin-bottom: 225px;
+}
+
+.delete_button {
+	margin-top: -10vh;
+	margin-left: -14vw;
 }
 
 ul {

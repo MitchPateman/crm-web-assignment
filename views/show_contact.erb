@@ -4,3 +4,12 @@
 	<strong>Note:</strong>
 	<%= @contact.note %>
 </h4>
+
+<h4 class="delete_button">
+	<a href= "/contacts/<%= @contact.id %>/edit">Edit Contact</a>
+</h4>
+
+<form class='delete_button' action='/contacts/<%= @contact.id %>' method='post'>
+	<input type='hidden' name='_method' value='delete'>
+	<input type='submit' value='Delete Contact'>
+</form>

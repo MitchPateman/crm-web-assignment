@@ -132,8 +132,8 @@ attr_accessor :first_name, :last_name, :email, :note
 	# This method should delete the contact
 	# HINT: Check the Array class docs for built-in methods that might be useful here
 	def delete
-		#@@contacts -= [delete_id.to_i]
-		@@contacts.delete(self)
+		#@@contacts.delete(self)
+		@@contacts.delete_if { |contact| contact.id == self.id }
 	end
 
 	# Feel free to add other methods here, if you need them.

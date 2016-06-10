@@ -8,7 +8,6 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 # Temporary fake data so that we always find contact with id 1.
-Contact.create('Johnny', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
 
 
 get '/' do
@@ -55,6 +54,16 @@ put '/contacts/:id' do
 		@contact.email = params[:email]
 		@contact.note = params[:note]
 
+		redirect to('/contacts')
+	else
+		raise Sinatra::NotFound
+	end
+end
+
+delete '/contacts/:id' do
+	@contact = Contact.find(params[:id].to_i)
+	if @contact
+		@contact.delete
 		redirect to('/contacts')
 	else
 		raise Sinatra::NotFound
