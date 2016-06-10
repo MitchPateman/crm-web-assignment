@@ -42,13 +42,18 @@ attr_accessor :first_name, :last_name, :email, :note
 
 	# This method should accept an id as an argument
 	# and return the contact who has that id
-	def self.find(find_id)
-		 @@contacts.each do |contact|
-			 if contact.id == find_id
-						return contact
-			 end
-		 end
+
+	def self.find(id)
+			@@contacts.find { |contact| contact.id == id }
 	end
+
+	# def self.find(find_id)
+	# 	 @@contacts.each do |contact|
+	# 		 if contact.id == find_id
+	# 					return contact
+	# 		 end
+	# 	 end
+	# end
 
 	# This method should allow you to specify
 	# 1. which of the contact's attributes you want to update
