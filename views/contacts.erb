@@ -1,8 +1,10 @@
-<h1>All Contacts</h1>
+<h1 class="body_title">All Contacts</h1>
 
 <ul>
-<% Contact.all.each do |contact| %>
-	<b><li><%= contact.first_name %> <%= contact.last_name %></li></b>
-	<%= contact.email %> ----- <%= contact.note %> <br /><br />
-<% end %>
+	<h4 class="print_all_contacts">
+			<% Contact.all.each do |contact| %>
+				<b><li><%= contact.first_name %> <%= contact.last_name %></li></b>
+				<%= contact.email %> ----- <%= contact.note %> <br /><br />
+			<% end %>
+	</h4>
 </ul>

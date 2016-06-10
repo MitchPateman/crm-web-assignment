@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Open+Sans+Condensed:300|Poiret+One|Amatic+SC:400,700);
+
+::-webkit-scrollbar {
+		display: none;
+}
+
+html {
+	background: url("oldman.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h1, h2, h3, h4, h5, nav {
+	text-align: center;
+	color: black;
+	font-family: 'Amatic SC', cursive;}
+
+.logo {
+	margin-top: 40px;
+	margin-left: 50%;
+	margin-bottom: 10px
+	}
+
+nav {
+	color: black;
+	text-align: center;
+	margin-left: 50%;
+	margin-bottom: 10px;
+}
+
+form {
+	margin-left: 36%;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #575c57;
+}
+
+body {
+	 color: black;
+}
+
+footer {
+	margin-left: 71vw;
+	position: fixed;
+	bottom: 0
+}
+
+.footer {
+	color: #575c57;
+}
+
+.body_title {
+	margin-right: 10%;
+}
+.print_all_contacts {
+	margin-right: 15%;
+	margin-bottom: 225px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+/*
+#second_level {
+	text-decoration: underline;
+}
+
+
+#logo {
+	border: 5px solid black;
+	background-color: yellow;
+	padding: 10px 10px 10px 10px;
+}
+*/

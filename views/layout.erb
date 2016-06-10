@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="/style.css">
 		<meta charset="utf-8">
 		<title>Mitch's CRM</title>
 	</head>
 
 	<body>
 		<header>
-			<h1>Welcome to <%= @crm_app_name %>!</h1>
-			<h3><%= @current_time %> </h3>
-
+			<h1 class='logo'>Mitch's CRM</h1>
 					<nav>
-						<h3>
-							<a href="/"> Home </a> -
-							<a href="/contacts/new"> Add New Contact </a>
-						</h3>
+						<h4>
+							<h4>+ + +</h4>
+							<a href="/"> Home </a><br />
+							<a href="/contacts/new"> Add New Contact </a><br />
+							<a href="/contacts"> View All Contacts</a><br />
+							<h4></h4>
+						</h4>
 					</nav>
 
 		</header>
@@ -22,7 +24,7 @@
 		<%= yield %>
 
 		<footer>
-			Mitchell Pateman's CRM &copy;
+			<h5 class="footer">Mitchell Pateman's CRM &copy;</h5>
 		</footer>
 
 	</body>
